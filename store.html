@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title> Pet Groove</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">Pet Groove</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header id="home">
+     
+    </header>
+
+
+
+    <section class="product" id="store">
+      <div class="section__container product__container">
+        <p class="section__subheader">Products</p>
+        <h2 class="section__header">pets</h2>
+        <div class="product__grid">
+          <div class="product__card">
+            <img src="assets/German-Shepherd-dog-Alsatian.webp" alt="product" />
+            <h4>Archibald</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$2900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="assets/dog.jpg" alt="product" />
+            <h4>Golden retrival</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="assets/small-dogs-bolognese.webp" alt="product" />
+            <h4>Bichon Frisé</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$1000.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="data:image/jpeg;base64,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" alt="product" />
+            <h4>Brent</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$2900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNt7qrzNeiNQw8pVC5nB3sSYibfuavBrayTg&s" alt="product" />
+            <h4>Hector</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$700.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmuBnoBCHxArCJAVUBzFHSJ_F74CNwZY4QJA&s" alt="product" />
+            <h4>Jackie</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$200.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZGEiJnS5NevWtfdQu1AjXSRhZPJXK_bpfw&s" alt="product" />
+            <h4>Ethan</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$2900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgUMbAONj9h0Db1CkDVZB--9H7yYV7mV1nYw&s" alt="product" />
+            <h4>Duffy</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtwyDTDXc6rH3c_8tKZ-IyL3N4ETy0vFamAg&s" alt="product" />
+            <h4>Dexter</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$4000.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5qs2eiUNtGZtVKaIAym4WAlHTuxAEBSzJg&s" alt="product" />
+            <h4>Chuck</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$290.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjsveMMhk_omgJScR7MKOG-irImY3RLvNq3w&s" alt="product" />
+            <h4>Alvin</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$4900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYM0Nh2bm8TYog6w8gD4iintI0_hYEsM3ZA&s" alt="product" />
+            <h4>Wilbur</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$4000.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkTKNWChRRLjcuYtjv0OdipunwrPL2lwYrQ&s" alt="product" />
+            <h4>Spencer</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$2900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqmNLUHLFadGhHc7pDoN5p9U5SDTU6pNfFtQ&s" alt="product" />
+            <h4>Rusty</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$500.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPeDfpTQMfNrmMoiWHiqXOc_fI8TViNXUqOQ&s" alt="product" />
+            <h4>Bichon Frisé</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$980.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2q2_rSV0TC77ycpR611ka9eVBJb2OdmwAOg&s" alt="product" />
+            <h4>Ralph</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$340.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0t9koxALcIHVFofryb16wBF2foR_d_PTmtQ&s" alt="product" />
+            <h4>Max</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$4900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3TJzIazHFobI-AuHMG6ZCA5dD9kXJGRceVQ&s" alt="product" />
+            <h4>Kendrick</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$400.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSh8q-yhpLmwU5GNIE6QecYqdw61pYDi1JQg&s" alt="product" />
+            <h4>Jeremy</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$2900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu562dLZhoD54-NlwpZDB0aX_V0WozntNFBA&s" alt="product" />
+            <h4>Lenny</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQryYJbkaV0Qt4vSOMnJ25dyqKC_sctEvexSA&s" alt="product" />
+            <h4>Jeffrey</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$43200.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxk4jG88TTToqy1sreTtGNrjmZcdEuNxjTrQ&s" alt="product" />
+            <h4>Floyd</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$200.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpkkjcQluQlE6tk7pd56JHYr_lcoI3a4fuIA&s" alt="product" />
+            <h4>Devin</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$670.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLqF1SKQL5uRvu94hi1Exi79Yk1C_6NZIGPA&s" alt="product" />
+            <h4>Derrick</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$430.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmASUswgTaj_hEHxO-ltHl5wXplwBzzbfJyw&s" alt="product" />
+            <h4>George</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$2900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJMTdryb82-dlfmNnGGvr4K1AMb7GwFDIwA&s" alt="product" />
+            <h4>Murdock</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$490.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwjiUSR-3WdiuYude9fAMHMGavadG61f1KIA&s" alt="product" />
+            <h4>Emmitt</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$1020.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSc5R452H-KpbgdUoPXTVZ-AJK-LLhEJMdlw&s" alt="product" />
+            <h4>Lucius</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$200.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNGvocmkcrm9-w5FbMwfa4cOU__7WVg8DiEA&s" alt="product" />
+            <h4>Jacob</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$1900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0h0EiCpv0rxfWSvC_2i2RyghUEyp841UOpA&s" alt="product" />
+            <h4>Jared</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$4000.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDVdsntKKtGhOxvkJIxy9FFtZwXmLRaiHXA&s" alt="product" />
+            <h4>Ganon</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$1900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAdsvVw8sIdjGBgA7oW1WZqozsVO3OuOHkow&s" alt="product" />
+            <h4>Edgar</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$2300.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpKiDagYy1XzFfSxmKJ3DDCyCJ_Ph4GL4bHw&s" alt="product" />
+            <h4>Dennis</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$1100.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQllYVtKiq0DLQMSTdlN1eEZcN3kRhedEyTA&s" alt="product" />
+            <h4>Coleman</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$2100.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlnaPCm07n-DGj4mkOqSdfrFe6cNIBmp2_UA&s" alt="product" />
+            <h4>Charleston</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$600.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3UunwI4Oyh-mMhveDuIbQtmkA24sT9UBLjw&s" alt="product" />
+            <h4>Bichon</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$780.00 USD</h3>
+          </div>
+
+
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvwMaYZWjxgk3CorNG-8_jdAYcwjyo7_LpWw&s" alt="product" />
+            <h4>Willie</h4>
+            <p>
+              Intelligent, loyal, and courageous. They are often used as working dogs in police and military roles.
+            </p>
+            <h3>$2900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQjOKl7e543T3IJ971RidrOdMCQWHL8Fqxkw&s" alt="product" />
+            <h4>Troy</h4>
+            <p>
+              Affectionate, intelligent, and devoted. They are excellent family pets and therapy dogs.
+            </p>
+            <h3>$4900.00 USD</h3>
+          </div>
+          <div class="product__card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY-AyRSJ54T7lN0JBx10sYNr67voHAQsKpZA&s" alt="product" />
+            <h4>Rosco</h4>
+            <p>
+              Lively, alert, and devoted. They are one of the smallest dog breeds and are full of personality.
+            </p>
+            <h3>$4000.00 USD</h3>
+          </div>
+        </div>        
+         
+      </div>     
+    </section>
+
+
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#">Pet Place</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Address</h4>
+          <ul class="footer__links">
+            <li><a href="#">New Delhi, India</a></li>
+            <li><a href="#">View on Maps</a></li>
+          </ul>
+          <br />
+          <h4>Inquiries</h4>
+          <ul class="footer__links">
+            <li><a href="#">+15798833680</a></li>
+            <li><a href="#">petgroove@outlook.com</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Newsletter</h4>
+          <p>Stay updated with out latest news</p>
+          <form   action="https://formspree.io/f/mblgweqj" method="POST">
+            <input type="email" placeholder="Your email" name="email"/>
+            <button class="btn">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </form>
+          <br />
+          <h4>Follow Us</h4>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-pinterest-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-tiktok-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67fc331880f2c6190f0514b6/1iooif6sf';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+  <!--End of Tawk.to Script-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
